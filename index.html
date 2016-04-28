@@ -4,113 +4,16 @@
   
   <title>Photo Gallery in CSS</title>
 <style>
-
-.g {
-  		padding: 0.25em;
-			overflow: hidden;
-		}
-		.g li {
-			float: left;
-			width: 50%;
-			padding: 0.25em;
-		}
-		.g img {
-			display: block;
-		}
-		.g li:nth-child(odd) {
-			clear: left;
-		}
-	
-		@media screen and (min-width: 40em) {
-			.g li {
-		    	width: 33.3333333333333333%; 
-		  	}
-		  	.g li:nth-child(3n+1) {
-		  		clear: left;
-		  	}
-		  	.g li:nth-child(odd) {
-				clear: none;
-			}
-		}
-		@media screen and (min-width: 55em) {
-			.g li {
-		    	width: 25%; 
-		  	}
-		  	.g li:nth-child(4n+1) {
-		  		clear: left;
-		  	}
-		  	.g li:nth-child(3n+1) {
-				clear: none;
-			}
-		}
-		@media screen and (min-width: 72em) {
-			.g li {
-		    	width: 20%; 
-		  	}
-		  	.g li:nth-child(5n+1) {
-		  		clear: left;
-		  	}
-		  	.g li:nth-child(4n+1) {
-				clear: none;
-			}
-		}
-		@media screen and (min-width: 90em) {
-			.g li {
-		    	width: 16.666666666%; 
-		  	}
-		  	.g li:nth-child(6n+1) {
-		  		clear: left;
-		  	}
-		  	.g li:nth-child(5n+1) {
-				clear: none;
-			}
-		}
 </style>
 </head>
 
 <body>
-<div id="pattern" class="pattern">
-  	<ul class="g">
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-			<li><a href="#"><img src="http://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Product Name" /></a></li>
-		</ul>
-	</div>
-	<!--End Pattern HTML-->
-	
-	<div class="container">	
-		<section class="pattern-description">
-			<h1>Image Grid</h1>
-			<p>A list of images that by default is two-columns. As screen real estate becomes available, more columns are added.</p>
-			<h2>Considerations</h2>
-			<ul>
-				<li>Assume small screen by default. Add columns as necessary.</li>
-			</ul>
-		</section>
-		<footer role="contentinfo">   
-			<div>
-				<nav id="menu">
-					<a href="http://bradfrost.github.com/this-is-responsive/patterns.html">&larr;More Responsive Patterns</a>
-				</nav>
-			</div>
-		</footer>
-	</div>
+<div class="grid">
+  <div class="grid__item" style="background-image: url(https://www.bluhomes.com/sites/default/files/styles/809x606_2/public/breezehouse-collage-slide-01.jpg?itok=qNbvV3bC);"></div>
+  <div class="grid__item" style="background-image: url(https://www.bluhomes.com/sites/default/files/styles/603x603_2/public/breezehouse-collage-circle-deck-02.jpg?itok=s2xxowgO);"></div>
+  <div class="grid__item" style="background-image: url(https://www.bluhomes.com/blu_modules/image-toggle-module/img/slide1/img-desktop@2x.jpg);"></div>
+  <div class="grid__item" style="background-image: url(https://www.bluhomes.com/sites/default/files/styles/809x606_2/public/breezehouse-collage-slide-02.jpg?itok=X3V0iOqV);"></div>
+  <div class="grid__item" style="background-image: url(https://www.bluhomes.com/sites/default/files/styles/809x606_2/public/breezehouse-collage-slide-03.jpg?itok=9x0iQ0VP);"></div>
+</div>
 </body>
 </html>
